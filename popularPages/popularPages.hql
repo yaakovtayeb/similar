@@ -57,6 +57,6 @@ WHERE (source in ('5025', '5267', '990', '870', '991', '874', '875', '876', '877
                   '864', '985', '986', '866', '5126', '5401', '988', '868', '989', '869', '902', '5129', '903', '904', '905')
 or (country=156 and source in ('5266', '5031', '5274', '5027', '5042', '5044', '5045', '5172', '5203', '5063', '5232', '5079', '5251', '5090')) or (country=392 and source='5432')
 or (country=410 and source='5476') or (country != 156 and source='952') or (country in (156, 344, 158) and source = '5136'))
-and year=17 and  site = "haken.en-japan.com*" and country<999 and month>=7 and month<=8 and country=392;
+and year=17 and  site = "en-japan.com*" and country<999 and month>=7 and month<=8 and country=392;
 
 hive -e "set hive.cli.print.header=true; SELECT * FROM yaakovt.popularpages;">/home/yaakov.tayeb/output/hurleyburley.com.tsv;
