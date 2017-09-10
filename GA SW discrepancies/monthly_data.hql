@@ -72,13 +72,13 @@ SELECT site,
        YEAR,
        MONTH
 FROM meta_ls_main.snapshot_estimated_values
-WHERE site in ('mtv.com*', 'cc.com*', 'tvland.com*')
-  AND ((YEAR=17 and month<4) or (year=16 and month>2))
-  and country=840;
+WHERE site in ('armanibeauty.fr*')
+  AND (YEAR=16 and month=1)
+  and country=250;
 
 
 
-hive -e "set hive.cli.print.header=true; SELECT * FROM yaakovt.monthly_data;">/home/yaakov.tayeb/output/data.tsv;
+hive -e "set hive.cli.print.header=true; SELECT * FROM yaakovt.monthly_data;">/home/yaakov.tayeb/output/totaljobs6.tsv;
 
 
 select month, sum(visits)

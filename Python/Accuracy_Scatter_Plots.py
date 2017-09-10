@@ -1,8 +1,8 @@
 from plotly.offline import init_notebook_mode, plot
 from plotly.graph_objs import *
-import numpy as np
 import pandas as pd
 import datetime
+from time import sleep
 
 init_notebook_mode()
 
@@ -67,7 +67,7 @@ def cleanCommans(dataframe):
     return dataframe.apply(pd.to_numeric, errors="ignore")
 
 # data = pd.read_clipboard(sep='\t') #read from clipboard
-path = "C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\Clients\\venmoscatter.tsv"
+path = "C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\Clients\indiasapps.tsv"
 data = pd.read_csv(path, sep="\t", header=0) #header is the line n or None
 data.columns = [x.lower() for x in data.columns] # turn headers to lower case
 data.columns = [x[x.find(".")+1:len(x)] for x in data.columns] #delete table name from column name
@@ -86,41 +86,44 @@ data = cleanCommans(data)
 print(data.columns.values)
 data.head()
 
-data["dailyactive"] = data["users"]/data['qualified_active_users']
-data2 = data[data["qualified_active_users"]>1000]
-data2 = pd.pivot_table(data2, values=['dailyactive', 'qualified_active_users'], index=['date','source'])
+# data["dailyactive"] = data["users"]/data['qualified_active_users']
+data2 = data.copy()
+data2 = pd.pivot_table(data2, values=['usagetime', 'sessions'], index=['app','source'])
 data2 = pd.DataFrame(data2.to_records())
 
 print(data2.columns.values)
 
-x = data2["date"]
-y = data2["dailyactive"]
-sizeofsource = (data2["qualified_active_users"]/max(data2["qualified_active_users"]))*5+1
-sizeofsource = sizeofsource.astype(int)
-
-trace1 = Scatter(
-    x=x,
-    y=y,
-    name = "Source",
-    mode = "markers",
-    marker = dict(
-        size = 5, # sizeofsource
-        color='rgba(152, 0, 0, .8)'
-        ),
-    text = data2["qualified_active_users"]
-)
-plotdata = [trace1]
-# R = np.corrcoef(y_ga, y_sw2)[0,1]
-plotTitle = "Daily users by source, month"
-layout = Layout(
-    title=plotTitle,
-    hovermode='closest',
-    xaxis=dict(
-        title='Dates',
-    ),
-    yaxis=dict(
-        title='Daily Active Users',
+for a in set(data2["app"]):
+    #x = data2[data2["app"] == a]["day"]
+    x = [2]*len(data2[data2["app"]==a])
+    y = data2[data2["app"] == a]["usagetime"]/60
+    #sizeofsource = (data2["qualified_active_users"]/max(data2["qualified_active_users"]))*5+1
+    sizes = data2[data2["app"] == a]["sessions"]
+    #sizeofsource = sizeofsource.astype(int)
+    trace1 = Scatter(
+        x=x,
+        y=y,
+        name = "Source",
+        mode = "markers",
+        marker = dict(
+            size = 5, # sizeofsource
+            color='rgba(152, 0, 0, .8)'
+            ),
+        text = data2["source"]
     )
-)
-fig = Figure(data=plotdata, layout=layout)
-plot(fig)
+    plotdata = [trace1]
+    # R = np.corrcoef(y_ga, y_sw2)[0,1]
+    plotTitle = "Daily users by source - %s" % a
+    layout = Layout(
+        title=plotTitle,
+        hovermode='closest',
+        xaxis=dict(
+            title='Days',
+        ),
+        yaxis=dict(
+            title='Usage Time',
+        )
+    )
+    fig = Figure(data=plotdata, layout=layout)
+    plot(fig)
+    sleep(1)

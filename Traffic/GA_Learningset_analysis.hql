@@ -2,7 +2,6 @@
 
 drop table yaakovt.ga_learningset;
 create external table if not EXISTS yaakovt.ga_learningset (
-dt                      string,
 site                    string,
 country                 int,
 pageviewmobile          double,
@@ -11,6 +10,8 @@ uniqmobile              double,
 uniqonline              double,
 visitsmobile            double,
 visitsonline            double,
+est_visits_mobile       double,
+est_visits_desktop      double,
 year                    int,
 month                   int
 ) ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' 
@@ -20,8 +21,8 @@ LOCATION '/user/yaakov.tayeb/outputs/ga_learningset/';
 INSERT OVERWRITE TABLE yaakovt.ga_learningset
 SELECT *
 FROM royy.all_learningset_data
-WHERE SITE="urlaubsguru.de"
-        AND YEAR=16;
+WHERE SITE="spree.co.za*"
+        AND YEAR=17;
 
 ---
 --- FINDING OUR DATA
@@ -29,43 +30,32 @@ WHERE SITE="urlaubsguru.de"
 
 --Monthly:
 
-DROP TABLE yaakovt.ga_learningset_sw;
+set hivevar:qsite = 'spree.co.za*';
 
-CREATE EXTERNAL TABLE IF NOT EXISTS yaakovt.ga_learningset_sw (
-  site string, 
-  country int,
-  platform string, 
-  rawvisits double, 
-  estimatedvisits double, 
-  YEAR int, 
-  MONTH int
-  ) ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' LOCATION '/user/yaakov.tayeb/ga_learningset_sw/';
+INSERT OVERWRITE TABLE yaakovt.ga_learningset
+SELECT  ga.site,
+        ga.country,
+        sum(ga.pageviewmobile),
+        sum(ga.pageviewonline),
+        sum(ga.uniqmobile),
+        sum(ga.uniqonline),
+        sum(ga.visitsmobile),
+        sum(ga.visitsonline),
+        sum(dest.estimatedvisits),
+        sum(mest.visits),
+        ga.month,
+        ga.year
+FROM analytics.merged_learningset as ga
+INNER JOIN analytics.snapshot_estimated_values AS dest
+ON (dest.site = concat(ga.site, '*') AND dest.month = ga.month
+    and dest.year = ga.year and dest.country=ga.country)
+INNER JOIN mobile.snapshot_estimated_values as mest
+ON (mest.site = concat(ga.site, '*') AND
+    mest.month = ga.month
+    and mest.year = ga.year
+    and mest.country = ga.country)
+WHERE dest.country=643
+and dest.year=17 and dest.month>3
+group by ga.site, ga.country, ga.month, ga.year;
 
-INSERT OVERWRITE TABLE yaakovt.ga_learningset_sw
-SELECT d.site,
-       d.country,
-       'desktop',
-       d.rawvisits,
-       d.estimatedvisits, 
-       d.year,
-       d.month
-FROM analytics.snapshot_estimated_values AS d
-        WHERE d.site="urlaubsguru.de*"
-        AND d.country=999
-        AND d.year=16;
-
-INSERT INTO yaakovt.ga_learningset_sw
-SELECT m.site,
-       m.country,
-       'mobile',
-       m.raw_visits,
-       m.visits, 
-       m.year,
-       m.month
-FROM mobile.snapshot_estimated_values AS m
-        WHERE m.site="urlaubsguru.de*"
-        AND m.country=999
-        AND m.year=16;
-
-hive -e "set hive.cli.print.header=true; SELECT * FROM yaakovt.ga_learningset;">/home/yaakov.tayeb/output/ga_learningset_urlaubsguru.tsv;
-hive -e "set hive.cli.print.header=true; SELECT * FROM yaakovt.ga_learningset_sw;">/home/yaakov.tayeb/output/urlaubsguru_sw.tsv;
+hive -e "set hive.cli.print.header=true; SELECT * FROM yaakovt.ga_learningset;">/home/yaakov.tayeb/output/russia_ga_sw.tsv;

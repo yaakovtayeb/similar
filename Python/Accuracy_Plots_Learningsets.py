@@ -68,7 +68,7 @@ def cleanCommans(dataframe):
     return dataframe.apply(pd.to_numeric, errors="ignore")
 
 # data = pd.read_clipboard(sep='\t') #read from clipboard
-path = "C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\Clients\denmark.market.gasw.tsv"
+path = "C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\Clients\\russia_ga_sw.tsv"
 data = pd.read_csv(path, sep="\t", header=0) #header is the line n or None
 data.columns = [x.lower() for x in data.columns] # turn headers to lower case
 data.columns = [x[x.find(".")+1:len(x)] for x in data.columns] #delete table name from column name
@@ -92,13 +92,13 @@ devices = ['desktop', 'mobile']
 
 summary=list()
 local_summary={}
-data2 = data[data["visitsonline"]>800000]
+# data = data[data["visitsonline"]>800000]
 for date in set(data["date"]):
     local_summary["date"] = date
     # for device in devices:
     # local_summary["device"] = device
-    x = data2.loc[(data2['date'] == date)]["visitsonline"] # GA data for a specific month
-    y = data2.loc[(data2['date'] == date)]["panel_desktop_est_visits"] # SW
+    x = data.loc[(data['date'] == date)]["visitsmobile"] # GA data for a specific month
+    y = data.loc[(data['date'] == date)]["est_visits_mobile"] # SW
     dots = (np.array(y)/100000 + 1).astype(int)
     f = np.poly1d(np.polyfit(x, y, 1))
     trace1 = Scatter(
@@ -108,7 +108,8 @@ for date in set(data["date"]):
         name='Visits',
         line=dict(
             shape='linear'
-        )
+        ),
+        text=data.loc[(data['date'] == date)]["site"].values
     )
     trace2 = Scatter(
         x=x,
@@ -126,14 +127,15 @@ for date in set(data["date"]):
         mode='lines',
         name='GA 2 GA',
         line=dict(
-            shape='linear'
+            shape='linear',
+            color='rgb(240, 240, 100)'
         )
     )
     plotdata = [trace1, trace2, trace3]
     R = np.corrcoef(y, x)[0,1]
-    delta = abs(y/x)
-    delta = np.median(delta[delta!=np.inf])
-    plotTitle = "Denmark Accuracy Check. Month: %s. R: %2f, d: %.2f" % (date, R, delta)
+    delta = (y / x) - 1 # abs((y / x) - 1)
+    delta = np.average(delta[delta!=np.inf])
+    plotTitle = "Russia Mobile Accuracy Check. Month: %s. R: %2f, d: %.2f" % (date, R, delta)
     layout = Layout(
         title=plotTitle,
         xaxis=dict(

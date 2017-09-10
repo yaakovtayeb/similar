@@ -1,3 +1,5 @@
+-- SET mapred.job.queue.name = root.research_shared;
+
 drop table yaakovt.visits;
 CREATE EXTERNAL TABLE IF NOT EXISTS yaakovt.visits (
 site                    string,
@@ -7,6 +9,7 @@ site2                   string,
 traffic_source          int,
 landingpage             string,
 sendingpage             string,
+keywords                string,
 user                    string,
 pages                   array<string>,
 timestamps              array<bigint>,
@@ -18,7 +21,7 @@ day                     int
 LINES TERMINATED BY '\n'
 LOCATION '/user/yaakov.tayeb/outputs/traffic/visits/';
 
-set hivevar:qsite = 'eyebuydirect.com*';
+set hivevar:qsite = ' guitarcenter.com*';
 set hivevar:qsite2 = '%glassesusa.com%';
 set hivevar:qcountry = 840;
 set hivevar:platform = "Desktop";
@@ -29,10 +32,11 @@ SELECT site,
        country,
        source,
        site2,
-       --getTopSpecialReferrerUDF(specialref) as traffic_source,
+       -- getTopSpecialReferrerUDF(specialref) as traffic_source,
        specialref,
        landingpage,
        sendingpage,
+       keywords,
        USER,
        pages,
        timestamps,
@@ -41,9 +45,9 @@ SELECT site,
        MONTH,
        DAY
 FROM ds.parquet_visits
-WHERE (site like "%promo.pokermatch.com%" or site like "%start.parimatch.com%") and site2 like "%adv.fan-sport.club%" and year=17 and month=7 and getTopSpecialReferrerUDF(specialref)=6;
+WHERE site="houseoffraser.co.uk*" and site2="indeed.co.uk" and year=17 and month=8 and specialref=6;
 
-hive -e "set hive.cli.print.header=true; SELECT * FROM yaakovt.visits;">/home/yaakov.tayeb/output/skybet.tsv;
+hive -e "set hive.cli.print.header=true; SELECT * FROM yaakovt.visits;">/home/yaakov.tayeb/output/ebay-amazon.guitar.tsv;
 
 --Click Stream
 
@@ -82,8 +86,8 @@ LOCATION '/user/yaakov.tayeb/outputs/clickstream_sample/';
 
 msck repair table desktop_panel.desktop_raw_stats;
 
---INSERT INTO yaakovt.clickstream_sample
 INSERT overwrite TABLE yaakovt.clickstream_sample
+--INSERT INTO yaakovt.clickstream_sample
 SELECT *
 FROM desktop_panel.desktop_raw_stats
 WHERE YEAR=17
@@ -103,7 +107,7 @@ set hivevar:qsite2 = 'sarahsflowers.com.au';
 set hivevar:qcountry = 392;
 set hivevar:platform = "Desktop";
 
--- INSERT INTO yaakovt.visits
+INSERT INTO yaakovt.visits
 INSERT OVERWRITE TABLE yaakovt.visits
 SELECT site,
        country,
@@ -120,5 +124,13 @@ SELECT site,
        YEAR,
        MONTH,
        DAY
-FROM ds.parquet_visits
-WHERE site="lookfantastic.fr*" and month=3 and year=17;
+FROM ds.parquet_visits_mobile
+WHERE site="foodeliciouz.com*" and month>2 and year=17;
+
+hive -e "set hive.cli.print.header=true; SELECT * FROM yaakovt.visits;">/home/yaakov.tayeb/output/sdvor.tsv;
+
+
+filedate=$(date +%d%m%y)
+hive -e "set hive.cli.print.header=true; SELECT * FROM yaakovt.JohnLewisWeeklyDistro;">home/yaakov.tayeb/output/JohnLewisWeeklyDistro${filedate}.tsv;
+
+hive -f "set hive.cli.print.header=true; SELECT * FROM yaakovt.JohnLewisWeeklyDistro;">/similargroup/prod_research/yaakov.tayeb/J1.tsv;

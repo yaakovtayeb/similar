@@ -5,17 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6eea0534-fc39-40b3-bbac-780699283bf5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/similar.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/R/holidaytaxis.com.r" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/R/holidaytaxis.com_excel.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/error-bar-asymmetric-array.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temp-plot.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GA SW discrepancies/Old-New.hql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Keywords Analysis/Keywords Group analysis.hql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python/Join.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python/bash_weekly.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python/changeweeklydistroparam.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python/designExcel.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python/pivot.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python/read_xml.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python/sendmail.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python/temp.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python/tryout.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python/weeklydistro.hql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Traffic/alldata.hql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Traffic/run_all_data.hql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Users/users_mortality.hql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/test1.hql" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Clients/JohnLewisWeeklyDistro0717.tsv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Clients/JohnLewisWeeklyDistro0717.tsv.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Clients/JohnLewisWeeklyDistro0717.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Clients/JohnLewisWeeklyDistro2407.tsv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Files/Sites" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Apps Usage/app_metrics_by_q.hql" afterPath="$PROJECT_DIR$/Apps Usage/app_metrics_by_q.hql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Files/UDFs.sql" afterPath="$PROJECT_DIR$/Files/UDFs.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Files/accuracyMonth.hql" afterPath="$PROJECT_DIR$/Files/accuracyMonth.hql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GA SW discrepancies/monthly_data.hql" afterPath="$PROJECT_DIR$/GA SW discrepancies/monthly_data.hql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GA SW discrepancies/site_country.hql" afterPath="$PROJECT_DIR$/GA SW discrepancies/site_country.hql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/Accuracy_Plots.py" afterPath="$PROJECT_DIR$/Python/Accuracy_Plots.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/Accuracy_Plots_Learningsets.py" afterPath="$PROJECT_DIR$/Python/Accuracy_Plots_Learningsets.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/Accuracy_Scatter_Plots.py" afterPath="$PROJECT_DIR$/Python/Accuracy_Scatter_Plots.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/Keywords_Analysis.py" afterPath="$PROJECT_DIR$/Python/Keywords_Analysis.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/SaveXlsx.py" afterPath="$PROJECT_DIR$/Python/SaveXlsx.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/siteCountry.py" afterPath="$PROJECT_DIR$/Python/siteCountry.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/temp-plot.html" afterPath="$PROJECT_DIR$/Python/temp-plot.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Traffic Sources/Weekly_Distro.hql" afterPath="$PROJECT_DIR$/Traffic Sources/Weekly_Distro.hql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Traffic/GA_Learningset_analysis.hql" afterPath="$PROJECT_DIR$/Traffic/GA_Learningset_analysis.hql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Traffic/PopularPagesAnalysis.py" afterPath="$PROJECT_DIR$/Traffic/PopularPagesAnalysis.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Traffic/takeVisits.hql" afterPath="$PROJECT_DIR$/Traffic/takeVisits.hql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/popularPages/popularPages.hql" afterPath="$PROJECT_DIR$/popularPages/popularPages.hql" />
     </list>
     <ignored path=".idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,96 +59,107 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UDFs.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Files/UDFs.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="115" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Weekly_Distro.hql" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Traffic Sources/Weekly_Distro.hql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="96" column="146" lean-forward="false" selection-start-line="96" selection-start-column="3" selection-end-line="96" selection-end-column="146" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JLsites.hql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Traffic Sources/JLsites.hql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="excel_cover_page.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/excel_cover_page.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Keywords_Analysis.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python/Keywords_Analysis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="76" lean-forward="false" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="accuracyMonth.hql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Files/accuracyMonth.hql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SaveXlsx.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python/SaveXlsx.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#17#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="daily_dis_distro.hql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GA SW discrepancies/daily_dis_distro.hql">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="42">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="34" />
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SendEmails.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python/SendEmails.py">
+      <file leaf-file-name="Accuracy_Plots_Learningsets.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python/Accuracy_Plots_Learningsets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+            <state relative-caret-position="221">
+              <caret line="151" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#200#1209#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Join.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Python/Join.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Accuracy_Plots.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python/Accuracy_Plots.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+                <element signature="e#211#1220#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="site_country.hql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GA SW discrepancies/site_country.hql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="popularPages.hql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/popularPages/popularPages.hql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="59" column="28" lean-forward="false" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="siteCountry.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python/siteCountry.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-682">
+              <caret line="83" column="5" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="takeVisits.hql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Traffic/takeVisits.hql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="52" lean-forward="true" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="source_country_site.hql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GA SW discrepancies/source_country_site.hql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users_mortality.hql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Users/users_mortality.hql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,49 +171,52 @@
       <list>
         <option value="SQL Script" />
         <option value="Jupyter Notebook" />
-        <option value="Python Script" />
         <option value="HQL Script" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>billing</find>
-      <find>billing.jsp?</find>
-      <find>in&quot;</find>
-      <find>${month}</find>
+      <find>\&quot;</find>
+      <find>libthrift</find>
+      <find>lib</find>
+      <find>&lt;source id=&quot;4&quot;</find>
+      <find>3027908</find>
+      <find>skim</find>
+      <find>Skimlinks</find>
+      <find>smtplib</find>
+      <find>basename</find>
+      <find>randint</find>
+      <find>print</find>
+      <find>message_body</find>
+      <find>fname</find>
+      <find>create_front</find>
+      <find>addsheet</find>
+      <find>adds</find>
+      <find>infra</find>
+      <find>create_source</find>
+      <find>r10</find>
       <find>\t</find>
-      <find>plot</find>
-      <find>#turn headers to lower case</find>
-      <find>Taboola</find>
-      <find>ga</find>
-      <find>widt</find>
-      <find>schedule</find>
-      <find>remo</find>
-      <find>double,</find>
+      <find>gcli</find>
+      <find>utm</find>
       <find>\n</find>
-      <find>gclid</find>
-      <find>lambda</find>
+      <find>pivo</find>
       <find>pivot</find>
-      <find>return</find>
-      <find>loc</find>
-      <find>work</find>
-      <find>.workbook</find>
-      <find>\.workbook</find>
-      <find>formating</find>
-      <find>fileName</find>
-      <find>i</find>
-      <find>self</find>
-      <find>report name</find>
-      <find>yandex</find>
-      <find>visits</find>
-      <find>vis1its</find>
+      <find>drop</find>
+      <find>sort</find>
+      <find>map</find>
+      <find>gro</find>
+      <find>2year_sun</find>
     </findStrings>
     <replaceStrings>
       <replace>y.</replace>
       <replace>y_</replace>
       <replace>\n</replace>
       <replace />
+      <replace>lines[0]</replace>
+      <replace>line</replace>
+      <replace>'</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -186,57 +228,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../../machine.learning/machine.learning/Tools/ga.vs.sw.py" />
-        <option value="$PROJECT_DIR$/MetaData/KC.Affinity.hql" />
-        <option value="$PROJECT_DIR$/Python/auto_dis_plotting.ipynb" />
-        <option value="$PROJECT_DIR$/Python/auto_dis_ploting.py" />
-        <option value="$PROJECT_DIR$/GA SW discrepancies/site_country.hql" />
-        <option value="$PROJECT_DIR$/Python/OpenDialogBox.py" />
-        <option value="$PROJECT_DIR$/Python/ga.vs.sw.py" />
-        <option value="$PROJECT_DIR$/Ads/AdNetworksAnalysis.hql" />
-        <option value="$PROJECT_DIR$/Python/PopularSitesAnalysings.py" />
-        <option value="$PROJECT_DIR$/Traffic/parquetPagesAnalysis.py" />
-        <option value="$PROJECT_DIR$/Python/parquetPagesAnalysings.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.sql" />
-        <option value="$PROJECT_DIR$/Mobile/googleAMP.hql" />
-        <option value="$PROJECT_DIR$/Python/source_county_site.py" />
-        <option value="$PROJECT_DIR$/Traffic/parquetPagesAnalysis.hql" />
-        <option value="$USER_HOME$/Downloads/sources-for-analyze-android" />
-        <option value="$PROJECT_DIR$/Python/FolderAnalysis.py" />
-        <option value="$PROJECT_DIR$/Python/Plots.ipynb" />
-        <option value="$PROJECT_DIR$/Python/Plots.py" />
-        <option value="$PROJECT_DIR$/Python/Plots2.py" />
-        <option value="$PROJECT_DIR$/Traffic Sources/trafficSources.hql" />
-        <option value="$PROJECT_DIR$/Python/Plot3.py" />
-        <option value="$PROJECT_DIR$/Python/sources_plots.py" />
-        <option value="$PROJECT_DIR$/GA SW discrepancies/source_country_site.hql" />
-        <option value="$PROJECT_DIR$/Traffic/temp.sql" />
-        <option value="$PROJECT_DIR$/Python/siteCountry.py" />
-        <option value="$PROJECT_DIR$/GA SW discrepancies/monthly_data.hql" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_3.sql" />
-        <option value="$PROJECT_DIR$/Python/.ipynb_checkpoints/InsanityChallenge1 - Crawler.py" />
         <option value="$PROJECT_DIR$/Keywords Analysis/keywords_analysis.hql" />
         <option value="$PROJECT_DIR$/Python/.ipynb_checkpoints/Scraping.py" />
-        <option value="$PROJECT_DIR$/popularPages/popularPages.hql" />
-        <option value="$PROJECT_DIR$/Traffic/PopularPagesAnalysis.py" />
         <option value="$PROJECT_DIR$/GA SW discrepancies/learning_set_analysis.hql" />
         <option value="$PROJECT_DIR$/Python/DataFramesTemplate.py" />
-        <option value="$PROJECT_DIR$/Python/Accuracy_Plots.py" />
-        <option value="$PROJECT_DIR$/Python/Accuracy_Plots_Learningsets.py" />
         <option value="$PROJECT_DIR$/GA SW discrepancies/daily_dis.hql" />
         <option value="$PROJECT_DIR$/GA SW discrepancies/daily_dis_distro.hql" />
         <option value="$PROJECT_DIR$/GA SW discrepancies/window_dis.hql" />
         <option value="$PROJECT_DIR$/Python/SendEmails.py" />
-        <option value="$PROJECT_DIR$/Python/Accuracy_Scatter_Plots.py" />
-        <option value="$PROJECT_DIR$/Files/accuracyMonth.hql" />
-        <option value="$PROJECT_DIR$/Apps Usage/app_metrics_by_q.hql" />
         <option value="$PROJECT_DIR$/Traffic/FacebookBeasts.hql" />
-        <option value="$PROJECT_DIR$/Traffic/takeVisits.hql" />
-        <option value="$PROJECT_DIR$/Python/SaveXlsx.py" />
-        <option value="$PROJECT_DIR$/Python/Keywords_Analysis.py" />
-        <option value="$USER_HOME$/Downloads/excel_cover_page.py" />
         <option value="$PROJECT_DIR$/Traffic Sources/JLsites.hql" />
+        <option value="$PROJECT_DIR$/Apps Usage/app_metrics_by_q.hql" />
+        <option value="$PROJECT_DIR$/scripts/test1.hql" />
+        <option value="$PROJECT_DIR$/Python/Accuracy_Scatter_Plots.py" />
+        <option value="$PROJECT_DIR$/Python/tryout.py" />
+        <option value="$PROJECT_DIR$/Python/SaveXlsx.py" />
         <option value="$PROJECT_DIR$/Traffic Sources/Weekly_Distro.hql" />
+        <option value="$PROJECT_DIR$/Traffic/alldata.hql" />
+        <option value="$PROJECT_DIR$/Traffic/run_all_data.hql" />
+        <option value="$PROJECT_DIR$/Python/weeklydistro.hql" />
+        <option value="$PROJECT_DIR$/Python/read_xml.py" />
+        <option value="$PROJECT_DIR$/Files/Sites.xml" />
+        <option value="$PROJECT_DIR$/Python/send_mail.py" />
+        <option value="$PROJECT_DIR$/Traffic/PopularPagesAnalysis.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py" />
+        <option value="$USER_HOME$/Downloads/excel_cover_page.py" />
+        <option value="$PROJECT_DIR$/Python/changeweeklydistroparam.py" />
+        <option value="$PROJECT_DIR$/Python/designExcel.py" />
+        <option value="$PROJECT_DIR$/Python/sendmail.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
+        <option value="$PROJECT_DIR$/Python/Keywords_Analysis.py" />
+        <option value="$PROJECT_DIR$/Python/Plots2.py" />
+        <option value="$PROJECT_DIR$/Python/pivot.py" />
+        <option value="$PROJECT_DIR$/GA SW discrepancies/monthly_data.hql" />
+        <option value="$PROJECT_DIR$/GA SW discrepancies/Old-New.hql" />
+        <option value="$PROJECT_DIR$/Python/temp.sh" />
+        <option value="$PROJECT_DIR$/Python/bash_weekly.sh" />
+        <option value="$PROJECT_DIR$/Keywords Analysis/Keywords Group analysis.hql" />
+        <option value="$PROJECT_DIR$/rundeck/weeklydistro.hql" />
+        <option value="$PROJECT_DIR$/rundeck/changeweeklydistroparam.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_4.sql" />
+        <option value="$PROJECT_DIR$/Python/Accuracy_Plots.py" />
+        <option value="$PROJECT_DIR$/Files/accuracyMonth.hql" />
+        <option value="$PROJECT_DIR$/Files/UDFs.sql" />
+        <option value="$PROJECT_DIR$/Traffic/GA_Learningset_analysis.hql" />
+        <option value="$PROJECT_DIR$/Traffic/takeVisits.hql" />
+        <option value="$PROJECT_DIR$/Users/users_mortality.hql" />
+        <option value="$PROJECT_DIR$/Python/Accuracy_Plots_Learningsets.py" />
+        <option value="$PROJECT_DIR$/GA SW discrepancies/site_country.hql" />
+        <option value="$PROJECT_DIR$/popularPages/popularPages.hql" />
+        <option value="$PROJECT_DIR$/Python/siteCountry.py" />
+        <option value="$PROJECT_DIR$/Python/Join.py" />
       </list>
     </option>
   </component>
@@ -280,6 +322,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -302,35 +345,49 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Traffic Sources" />
+              <option name="myItemId" value="rundeck" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="similar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="similar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Traffic Sources/Weekly_Distro.hql" />
     <property name="settings.editor.selected.configurable" value="terminal" />
-    <property name="SearchEverywhereHistoryKey" value="sites&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Files/Sites&#10;UDF&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Files/UDFs.sql&#10;udf&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Files/UDFs.sql&#10;key&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/Keywords_Analysis.py&#10;distr&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/GA SW discrepancies/daily_dis_distro.hql&#10;save&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/SaveXlsx.py&#10;dai&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/GA SW discrepancies/daily_dis_distro.hql&#10;take&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Traffic/takeVisits.hql&#10;dail&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/GA SW discrepancies/daily_dis_distro.hql&#10;source&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/GA SW discrepancies/source_country_site.hql&#10;acc&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Files/accuracyMonth.hql&#10;sc&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/Scraping.py&#10;data&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/DataFramesTemplate.py&#10;scatter&#9;null&#9;null&#10;ta&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Traffic/takeVisits.hql&#10;ud&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Files/UDFs.sql&#10;accu&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/Accuracy_Plots.py&#10;app&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Apps Usage/app_metrics_by_q.hql&#10;keywords&#9;null&#9;null&#10;c&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Files/accuracyMonth.hql&#10;datafram&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/DataFramesTemplate.py&#10;mon&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Files/accuracyMonth.hql&#10;report&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Clients/AccReport.tsv&#10;month&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/GA SW discrepancies/monthly_data.hql&#10;learn&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/GA SW discrepancies/learning_set_analysis.hql&#10;ac&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/Accuracy_Plots.py&#10;popular&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/popularPages/popularPages.hql&#10;visi&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Traffic/takeVisits.hql&#10;pop&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Traffic/PopularPagesAnalysis.py&#10;SITES&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Files/Sites&#10;monthly&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/GA SW discrepancies/monthly_data.hql&#10;cra&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/.ipynb_checkpoints/Scraping.py&#10;coun&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/siteCountry.py&#10;country&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/GA SW discrepancies/site_country.hql&#10;daily&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/GA SW discrepancies/daily_dis.hql&#10;sources&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/source_county_site.py&#10;temp&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Traffic/temp.sql&#10;plot&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/Plots.py&#10;keyword&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Keywords Analysis/keywords_analysis.hql&#10;plot3&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/Plot3.py&#10;plot2&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/Plots2.py&#10;dis&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/auto_dis_ploting.py&#10;auto&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/auto_dis_ploting.py&#10;folder&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/FolderAnalysis.py&#10;פךםא&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/auto_dis_ploting.py&#10;ga&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/ga.vs.sw.py&#10;Acc&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Files/accuracyMonth.hql&#10;popula&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/PopularSitesAnalysings.py&#10;siteco&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/GA SW discrepancies/site_country.hql&#10;traffic&#9;FILE&#9;file://C:/Users/yaakov.tayeb/.PyCharmCE2017.1/config/scratches/TrafficSource.hql.sql" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="MYSQL-SQL&#10;SQLITE-SQL&#10;Python" />
+    <property name="SearchEverywhereHistoryKey" value="join&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/Join.py&#10;site&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/siteCountry.py&#10;take&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Traffic/takeVisits.hql&#10;pop&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/popularPages/popularPages.hql&#10;source&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/GA SW discrepancies/source_country_site.hql&#10;learning&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/Accuracy_Plots_Learningsets.py&#10;ga&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Traffic/GA_Learningset_analysis.hql&#10;ta&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Traffic/takeVisits.hql&#10;user&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Users/users_mortality.hql&#10;app&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Apps Usage/app_metric.hql&#10;udf&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Files/UDFs.sql&#10;accurac&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Files/accuracyMonth.hql&#10;country&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/GA SW discrepancies/site_country.hql&#10;acc.&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/Accuracy_Plots.py&#10;visi&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Traffic/takeVisits.hql&#10;we&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/rundeck/changeweeklydistroparam.py&#10;accu&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/Accuracy_Plots.py&#10;weekl&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/rundeck/changeweeklydistroparam.py&#10;bash&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/bash_weekly.sh&#10;keyw&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Keywords Analysis/keywords_analysis.hql&#10;templa&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/DataFramesTemplate.py&#10;lear&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Traffic/GA_Learningset_analysis.hql&#10;sca&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/Accuracy_Scatter_Plots.py&#10;month&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/GA SW discrepancies/monthly_data.hql&#10;site &#9;null&#9;null&#10;acc&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/Accuracy_Scatter_Plots.py&#10;ac&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/Accuracy_Plots.py&#10;po&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/popularPages/popularPages.hql&#10;changeweeklydistroparam&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/changeweeklydistroparam.py&#10;send&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/sendmail.py&#10;key&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Keywords Analysis/keywords_analysis.hql&#10;excel&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Downloads/excel_cover_page.py&#10;mon&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/GA SW discrepancies/monthly_data.hql&#10;uf&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Files/UDFs.sql&#10;sendma&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/sendmail.py&#10;sites&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Files/Sites.xml&#10;popula&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/popularPages/popularPages.hql&#10;weeklydis&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Traffic Sources/Weekly_Distro.hql&#10;xls&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/SaveXlsx.py&#10;wee&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Traffic Sources/Weekly_Distro.hql&#10;site_coun&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/GA SW discrepancies/site_country.hql&#10;plot&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/Accuracy_Plots.py&#10;week&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Traffic Sources/Weekly_Distro.hql&#10;emai&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/SendEmails.py&#10;UDF&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Files/UDFs.sql&#10;distr&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/GA SW discrepancies/daily_dis_distro.hql&#10;save&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/SaveXlsx.py&#10;dai&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/GA SW discrepancies/daily_dis_distro.hql&#10;dail&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/GA SW discrepancies/daily_dis_distro.hql&#10;sc&#9;FILE&#9;file://C:/Users/yaakov.tayeb/Documents/GitHub/similar/similar/Python/Scraping.py" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="Python&#10;MYSQL-SQL&#10;SQLITE-SQL" />
     <property name="ToolWindowEvent Log.ShowToolbar" value="false" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/Traffic Sources/Weekly_Distro.hql" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yaakov.tayeb\Documents\GitHub\similar\popularPages" />
+      <recent name="C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\Traffic Sources" />
+      <recent name="C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\Python" />
       <recent name="C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\Traffic" />
       <recent name="C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\GA SW discrepancies" />
       <recent name="C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\Python\" />
       <recent name="C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\Traffic Sources" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\yaakov.tayeb\Documents\GitHub\similar\popularPages" />
-      <recent name="C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\Traffic Sources" />
-      <recent name="C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -345,61 +402,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.excel_cover_page">
-    <configuration default="false" name="Scraping" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python/.ipynb_checkpoints" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="similar" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/.ipynb_checkpoints/Scraping.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Accuracy_Plots_Learningsets" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="similar" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/Accuracy_Plots_Learningsets.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="SendEmails" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="similar" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/SendEmails.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.changeweeklydistroparam">
     <configuration default="false" name="Accuracy_Scatter_Plots" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -434,6 +437,71 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SaveXlsx" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="similar" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/SaveXlsx.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Accuracy_Plots" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="similar" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/Accuracy_Plots.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="changeweeklydistroparam" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rundeck" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="similar" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rundeck/changeweeklydistroparam.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -502,19 +570,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Scraping" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Accuracy_Plots_Learningsets" />
-      <item index="2" class="java.lang.String" itemvalue="Python.SendEmails" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Accuracy_Scatter_Plots" />
-      <item index="4" class="java.lang.String" itemvalue="Python.excel_cover_page" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Accuracy_Scatter_Plots" />
+      <item index="1" class="java.lang.String" itemvalue="Python.excel_cover_page" />
+      <item index="2" class="java.lang.String" itemvalue="Python.SaveXlsx" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Accuracy_Plots" />
+      <item index="4" class="java.lang.String" itemvalue="Python.changeweeklydistroparam" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.excel_cover_page" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Accuracy_Scatter_Plots" />
-        <item index="2" class="java.lang.String" itemvalue="Python.SendEmails" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Accuracy_Plots_Learningsets" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Scraping" />
+        <item index="0" class="java.lang.String" itemvalue="Python.changeweeklydistroparam" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Accuracy_Plots" />
+        <item index="2" class="java.lang.String" itemvalue="Python.SaveXlsx" />
+        <item index="3" class="java.lang.String" itemvalue="Python.excel_cover_page" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Accuracy_Scatter_Plots" />
       </list>
     </recent_temporary>
   </component>
@@ -685,21 +753,21 @@
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29383886" sideWeight="0.43631038" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2085308" sideWeight="0.60980964" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957748" sideWeight="0.49583334" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.314376" sideWeight="0.5636896" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.60980964" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4028436" sideWeight="0.5636896" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769954" sideWeight="0.49707174" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2672035" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37554905" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39968404" sideWeight="0.54978037" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -711,18 +779,18 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29383886" sideWeight="0.43631038" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.60980964" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36334914" sideWeight="0.60980964" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957748" sideWeight="0.49583334" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.314376" sideWeight="0.5636896" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34755135" sideWeight="0.5636896" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769954" sideWeight="0.49707174" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2672035" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39968404" sideWeight="0.54978037" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -739,361 +807,268 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Python/auto_dis_ploting.py">
+    <entry file="file://$PROJECT_DIR$/Python/weeklydistro.hql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="63" column="38" lean-forward="true" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+        <state relative-caret-position="231">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Files/Sites" />
+    <entry file="file://$PROJECT_DIR$/Files/Sites.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="4823" column="28" lean-forward="false" selection-start-line="4823" selection-start-column="24" selection-end-line="4823" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/read_xml.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/send_mail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/excel_cover_page.py" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Traffic Sources/Weekly_Distro.hql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/sendmail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="56" lean-forward="true" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/designExcel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="141" column="32" lean-forward="false" selection-start-line="141" selection-start-column="27" selection-end-line="141" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/calcon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-773">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/changeweeklydistroparam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-815">
+          <caret line="15" column="55" lean-forward="true" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Python/combinatorics.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Traffic/parquetPagesAnalysis.hql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/calcon.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/boats_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/error-bar-asymmetric-array.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1323">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp-plot.html">
+    <entry file="file://$PROJECT_DIR$/../../machine.learning/Machine-Learning-A-Z-Template-Folder/Part 1 - Data Preprocessing/data_preprocessing_template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="11523" lean-forward="false" selection-start-line="0" selection-start-column="11523" selection-end-line="0" selection-end-column="11523" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Traffic Sources/trafficSources.hql">
+    <entry file="file://$PROJECT_DIR$/Traffic/PopularPagesAnalysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        <state relative-caret-position="-315">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="8" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Plot3.py">
+    <entry file="file://$PROJECT_DIR$/Python/auto_dis_ploting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-203">
-          <caret line="0" column="31" lean-forward="true" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+        <state relative-caret-position="0">
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Plot_Correlations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/parquetPagesAnalysings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Keywords_Analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="30" column="185" lean-forward="false" selection-start-line="30" selection-start-column="183" selection-end-line="30" selection-end-column="185" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Python/Plots2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="42" column="12" lean-forward="false" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/source_county_site.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GA SW discrepancies/site_country.hql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="31" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/sources_plots.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        <state relative-caret-position="0">
+          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Python/Plots.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#24#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python/siteCountry.py">
+    <entry file="file://$PROJECT_DIR$/Python/pivot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Traffic/temp.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Keywords Analysis/keywords_analysis.hql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/site-packages/requests/packages/urllib3/util/connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="834">
-          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/.ipynb_checkpoints/InsanityChallenge1 - Crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Clients/AccReport.tsv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="132" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/popularPages/popularPages.hql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Traffic/PopularPagesAnalysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="26" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/.ipynb_checkpoints/Scraping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GA SW discrepancies/learning_set_analysis.hql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1113">
-          <caret line="53" column="20" lean-forward="true" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/site-packages/jedi/api/keywords.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GA SW discrepancies/daily_dis.hql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Accuracy_Plots_Learningsets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="76" column="38" lean-forward="true" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GA SW discrepancies/window_dis.hql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GA SW discrepancies/monthly_data.hql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="30" column="40" lean-forward="false" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Apps Usage/app_metrics_by_source.hql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/site-packages/plotly/graph_objs/graph_objs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="1598" column="6" lean-forward="false" selection-start-line="1598" selection-start-column="6" selection-end-line="1598" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Scraping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        <state relative-caret-position="861">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Python/Accuracy_Scatter_Plots.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="89" column="48" lean-forward="false" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
+        <state relative-caret-position="252">
+          <caret line="107" column="22" lean-forward="true" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Accuracy_Plots.py">
+    <entry file="file://$PROJECT_DIR$/GA SW discrepancies/Old-New.hql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python/DataFramesTemplate.py">
+    <entry file="file://$PROJECT_DIR$/GA SW discrepancies/monthly_data.hql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GA SW discrepancies/source_country_site.hql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Traffic/FacebookBeasts.hql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+        <state relative-caret-position="21">
+          <caret line="73" column="43" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Apps Usage/app_metrics_by_q.hql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        <state relative-caret-position="546">
+          <caret line="26" column="14" lean-forward="false" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Traffic/takeVisits.hql">
+    <entry file="file://$PROJECT_DIR$/Python/DataFramesTemplate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="1428">
+          <caret line="70" column="21" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python/untitled1.py">
+    <entry file="file://$PROJECT_DIR$/Keywords Analysis/keywords_analysis.hql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        <state relative-caret-position="420">
+          <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python/SendEmails.py">
+    <entry file="file://$PROJECT_DIR$/Python/temp.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="21">
+          <caret line="1" column="89" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="230" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Files/accuracyMonth.hql">
+    <entry file="file://$PROJECT_DIR$/Python/bash_weekly.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        <state relative-caret-position="147">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Keywords Analysis/Keywords Group analysis.hql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="23" column="54" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python/SaveXlsx.py">
+    <entry file="file://$PROJECT_DIR$/rundeck/bash_weekly.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GA SW discrepancies/daily_dis_distro.hql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="34" />
+        <state relative-caret-position="210">
+          <caret line="10" column="74" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="74" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Keywords_Analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="76" lean-forward="false" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/excel_cover_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Files/Sites">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="791" column="60" lean-forward="false" selection-start-line="791" selection-start-column="56" selection-end-line="791" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Traffic Sources/JLsites.hql">
+    <entry file="file://$PROJECT_DIR$/rundeck/designExcel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="26" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="false" />
+            <element signature="e#99#372#0" expanded="false" />
+            <element signature="e#413#3194#0" expanded="false" />
+            <element signature="e#4242#5140#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rundeck/weeklydistro.hql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="111" column="97" lean-forward="false" selection-start-line="111" selection-start-column="65" selection-end-line="111" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_4.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rundeck/changeweeklydistroparam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1101,15 +1076,118 @@
     <entry file="file://$PROJECT_DIR$/Files/UDFs.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="115" />
+          <caret line="0" column="49" lean-forward="true" selection-start-line="0" selection-start-column="49" selection-end-line="0" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Traffic Sources/Weekly_Distro.hql">
+    <entry file="file://$PROJECT_DIR$/Apps Usage/app_metric.hql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="96" column="146" lean-forward="false" selection-start-line="96" selection-start-column="3" selection-end-line="96" selection-end-column="146" />
+        <state relative-caret-position="0">
+          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Users/users_mortality.hql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Traffic/GA_Learningset_analysis.hql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Files/accuracyMonth.hql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GA SW discrepancies/source_country_site.hql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/popularPages/popularPages.hql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="59" column="28" lean-forward="false" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Accuracy_Plots.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+            <element signature="e#211#1220#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/source_county_site.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Traffic/takeVisits.hql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="52" lean-forward="true" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/siteCountry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-682">
+          <caret line="83" column="5" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GA SW discrepancies/site_country.hql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Accuracy_Plots_Learningsets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="151" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding>
+            <element signature="e#200#1209#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Join.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
           <folding />
         </state>
       </provider>

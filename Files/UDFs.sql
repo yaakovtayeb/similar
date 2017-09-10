@@ -1,3 +1,5 @@
+SET mapred.job.queue.name = root.research_shared;
+
 add jar hdfs:////similargroup/jars/mobile/daily/mobile/2016-04-30/2016-05-01-06-47-58-254/mobile-web/JRI-1.jar;
 add jar hdfs:////similargroup/jars/mobile/daily/mobile/2016-04-30/2016-05-01-06-47-58-254/mobile-web/sql2o-1.2.1.jar;
 add jar hdfs:////similargroup/jars/mobile/daily/mobile/2016-04-30/2016-05-01-06-47-58-254/mobile-web/blueprints-core-2.6.0.jar;
@@ -53,13 +55,13 @@ add jar hdfs:////similargroup/jars/mobile/daily/mobile/2016-04-30/2016-05-01-06-
 add jar hdfs:////similargroup/jars/mobile/daily/mobile/2016-04-30/2016-05-01-06-47-58-254/mobile-web/analytics.jar;
 
 create temporary function getTopSpecialReferrerUDF as 'com.similargroup.common.hive.udfs.getTopSpecialReferrerUDF';
-create temporary function getSpecialReferrerNameUDF as 'com.similargroup.common.hive.udfs.sr.getSpecialReferrerNameUDF';
-create temporary function geturlwithkeysuffixudf as 'com.similargroup.analytics2.hive.udfs.getUrlWithKeySuffixUDF';
-create temporary function isSonOfSpecialRefererUDF as 'com.similargroup.analytics2.hive.udfs.isSonOfSpecialRefererUDF';
-create temporary function rankUDF as 'com.similargroup.analytics2.hive.udfs.rankUDF';
-create temporary function getKeywordsUDF as 'com.similargroup.analytics2.hive.udfs.getKeywordsUDF';
-create temporary function getFirstLevelDomainUDF as 'com.similargroup.common.hive.udfs.getFirstLevelDomainUDF';
-create temporary function getSpecialRefererUDF as 'com.similargroup.common.hive.udfs.getSpecialRefererUDF';
+-- create temporary function getSpecialReferrerNameUDF as 'com.similargroup.common.hive.udfs.sr.getSpecialReferrerNameUDF';
+-- create temporary function geturlwithkeysuffixudf as 'com.similargroup.analytics2.hive.udfs.getUrlWithKeySuffixUDF';
+-- create temporary function isSonOfSpecialRefererUDF as 'com.similargroup.analytics2.hive.udfs.isSonOfSpecialRefererUDF';
+-- create temporary function rankUDF as 'com.similargroup.analytics2.hive.udfs.rankUDF';
+-- create temporary function getKeywordsUDF as 'com.similargroup.analytics2.hive.udfs.getKeywordsUDF';
+-- create temporary function getFirstLevelDomainUDF as 'com.similargroup.common.hive.udfs.getFirstLevelDomainUDF';
+-- create temporary function getSpecialRefererUDF as 'com.similargroup.common.hive.udfs.getSpecialRefererUDF';
 
 
 

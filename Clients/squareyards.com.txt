@@ -1,0 +1,193 @@
+site	country	device category	visits	year	month	assessment
+squareyards.com*	India	desktop	67175.03058	16	7	sw
+squareyards.com*	India	desktop	58823.37686	16	8	sw
+squareyards.com*	India	desktop	45081.63753	16	9	sw
+squareyards.com*	India	desktop	43625.57384	16	10	sw
+squareyards.com*	India	desktop	31720.96814	16	11	sw
+squareyards.com*	India	desktop	24448.3612	16	12	sw
+squareyards.com*	India	desktop	34428.00081	17	1	sw
+squareyards.com*	India	desktop	39197.0379	17	2	sw
+squareyards.com*	India	desktop	40617.78806	17	3	sw
+squareyards.com*	India	desktop	43429.39021	17	4	sw
+squareyards.com*	India	desktop	52744.64434	17	5	sw
+squareyards.com*	India	desktop	79303.70449	17	6	sw
+squareyards.com*	India	desktop	156916	16	7	ga
+squareyards.com*	India	desktop	88877	16	8	ga
+squareyards.com*	India	desktop	104207	16	9	ga
+squareyards.com*	India	desktop	101141	16	10	ga
+squareyards.com*	India	desktop	87712	16	11	ga
+squareyards.com*	India	desktop	91007	16	12	ga
+squareyards.com*	India	desktop	113376	17	1	ga
+squareyards.com*	India	desktop	104236	17	2	ga
+squareyards.com*	India	desktop	122923	17	3	ga
+squareyards.com*	India	desktop	109046	17	4	ga
+squareyards.com*	India	desktop	130669	17	5	ga
+squareyards.com*	India	desktop	199728	17	6	ga
+squareyards.com*	India	mobile	122719.1896	16	7	sw
+squareyards.com*	India	mobile	125729.2727	16	8	sw
+squareyards.com*	India	mobile	111396.1769	16	9	sw
+squareyards.com*	India	mobile	102890.742	16	10	sw
+squareyards.com*	India	mobile	48210.52861	16	11	sw
+squareyards.com*	India	mobile	49231.59196	16	12	sw
+squareyards.com*	India	mobile	128575.2932	17	1	sw
+squareyards.com*	India	mobile	226149.9381	17	2	sw
+squareyards.com*	India	mobile	516559.1231	17	3	sw
+squareyards.com*	India	mobile	374192.1507	17	4	sw
+squareyards.com*	India	mobile	503161.8368	17	5	sw
+squareyards.com*	India	mobile	989623.5185	17	6	sw
+squareyards.com*	India	mobile	138105	16	7	ga
+squareyards.com*	India	mobile	124467	16	8	ga
+squareyards.com*	India	mobile	146513	16	9	ga
+squareyards.com*	India	mobile	157149	16	10	ga
+squareyards.com*	India	mobile	60003	16	11	ga
+squareyards.com*	India	mobile	55948	16	12	ga
+squareyards.com*	India	mobile	289610	17	1	ga
+squareyards.com*	India	mobile	325719	17	2	ga
+squareyards.com*	India	mobile	614901	17	3	ga
+squareyards.com*	India	mobile	606499	17	4	ga
+squareyards.com*	India	mobile	628512	17	5	ga
+squareyards.com*	India	mobile	1128707	17	6	ga
+squareyards.com*	Qatar	desktop	1279.374397	16	7	sw
+squareyards.com*	Qatar	desktop	5899.573883	16	8	sw
+squareyards.com*	Qatar	desktop	2644.404384	16	9	sw
+squareyards.com*	Qatar	desktop	25590.37011	16	10	sw
+squareyards.com*	Qatar	desktop	3855.664159	16	11	sw
+squareyards.com*	Qatar	desktop	1138.837823	16	12	sw
+squareyards.com*	Qatar	desktop	4048.500952	17	1	sw
+squareyards.com*	Qatar	desktop	2747.228385	17	2	sw
+squareyards.com*	Qatar	desktop	1721.556619	17	3	sw
+squareyards.com*	Qatar	desktop	1225.994089	17	4	sw
+squareyards.com*	Qatar	desktop	254.8239758	17	5	sw
+squareyards.com*	Qatar	desktop	288.7086534	17	6	sw
+squareyards.com*	Qatar	desktop	2352	16	7	ga
+squareyards.com*	Qatar	desktop	3315	16	8	ga
+squareyards.com*	Qatar	desktop	2630	16	9	ga
+squareyards.com*	Qatar	desktop	22678	16	10	ga
+squareyards.com*	Qatar	desktop	5622	16	11	ga
+squareyards.com*	Qatar	desktop	2999	16	12	ga
+squareyards.com*	Qatar	desktop	7521	17	1	ga
+squareyards.com*	Qatar	desktop	6548	17	2	ga
+squareyards.com*	Qatar	desktop	5808	17	3	ga
+squareyards.com*	Qatar	desktop	4632	17	4	ga
+squareyards.com*	Qatar	desktop	4743	17	5	ga
+squareyards.com*	Qatar	desktop	2604	17	6	ga
+squareyards.com*	Qatar	mobile	0	16	7	sw
+squareyards.com*	Qatar	mobile	0	16	8	sw
+squareyards.com*	Qatar	mobile	0	16	9	sw
+squareyards.com*	Qatar	mobile	0	16	10	sw
+squareyards.com*	Qatar	mobile	0	16	11	sw
+squareyards.com*	Qatar	mobile	0	16	12	sw
+squareyards.com*	Qatar	mobile	0	17	1	sw
+squareyards.com*	Qatar	mobile	0	17	2	sw
+squareyards.com*	Qatar	mobile	0	17	3	sw
+squareyards.com*	Qatar	mobile	0	17	4	sw
+squareyards.com*	Qatar	mobile	0	17	5	sw
+squareyards.com*	Qatar	mobile	0	17	6	sw
+squareyards.com*	Qatar	mobile	15467	16	7	ga
+squareyards.com*	Qatar	mobile	9273	16	8	ga
+squareyards.com*	Qatar	mobile	1929	16	9	ga
+squareyards.com*	Qatar	mobile	15729	16	10	ga
+squareyards.com*	Qatar	mobile	5227	16	11	ga
+squareyards.com*	Qatar	mobile	2224	16	12	ga
+squareyards.com*	Qatar	mobile	13146	17	1	ga
+squareyards.com*	Qatar	mobile	14250	17	2	ga
+squareyards.com*	Qatar	mobile	71699	17	3	ga
+squareyards.com*	Qatar	mobile	15141	17	4	ga
+squareyards.com*	Qatar	mobile	9956	17	5	ga
+squareyards.com*	Qatar	mobile	9105	17	6	ga
+squareyards.com*	Saudi Arabia	desktop	442.1441974	16	7	sw
+squareyards.com*	Saudi Arabia	desktop	12684.19499	16	8	sw
+squareyards.com*	Saudi Arabia	desktop	57594.40872	16	9	sw
+squareyards.com*	Saudi Arabia	desktop	51419.09853	16	10	sw
+squareyards.com*	Saudi Arabia	desktop	1330.668481	16	11	sw
+squareyards.com*	Saudi Arabia	desktop	2245.469602	16	12	sw
+squareyards.com*	Saudi Arabia	desktop	6155.058369	17	1	sw
+squareyards.com*	Saudi Arabia	desktop	6481.519482	17	2	sw
+squareyards.com*	Saudi Arabia	desktop	2866.672774	17	3	sw
+squareyards.com*	Saudi Arabia	desktop	8695.858959	17	4	sw
+squareyards.com*	Saudi Arabia	desktop	1337.649539	17	5	sw
+squareyards.com*	Saudi Arabia	desktop	336.9121297	17	6	sw
+squareyards.com*	Saudi Arabia	desktop	700	16	7	ga
+squareyards.com*	Saudi Arabia	desktop	11334	16	8	ga
+squareyards.com*	Saudi Arabia	desktop	41091	16	9	ga
+squareyards.com*	Saudi Arabia	desktop	46707	16	10	ga
+squareyards.com*	Saudi Arabia	desktop	3135	16	11	ga
+squareyards.com*	Saudi Arabia	desktop	4633	16	12	ga
+squareyards.com*	Saudi Arabia	desktop	14262	17	1	ga
+squareyards.com*	Saudi Arabia	desktop	10563	17	2	ga
+squareyards.com*	Saudi Arabia	desktop	6948	17	3	ga
+squareyards.com*	Saudi Arabia	desktop	9581	17	4	ga
+squareyards.com*	Saudi Arabia	desktop	6040	17	5	ga
+squareyards.com*	Saudi Arabia	desktop	956	17	6	ga
+squareyards.com*	Saudi Arabia	mobile	19424.59198	16	7	sw
+squareyards.com*	Saudi Arabia	mobile	5303.573058	16	8	sw
+squareyards.com*	Saudi Arabia	mobile	18493.2524	16	9	sw
+squareyards.com*	Saudi Arabia	mobile	14162.87001	16	10	sw
+squareyards.com*	Saudi Arabia	mobile	7989.788407	16	11	sw
+squareyards.com*	Saudi Arabia	mobile	62454.7905	16	12	sw
+squareyards.com*	Saudi Arabia	mobile	125591.778	17	1	sw
+squareyards.com*	Saudi Arabia	mobile	146584.4665	17	2	sw
+squareyards.com*	Saudi Arabia	mobile	199312.5428	17	3	sw
+squareyards.com*	Saudi Arabia	mobile	257394.717	17	4	sw
+squareyards.com*	Saudi Arabia	mobile	311536.8043	17	5	sw
+squareyards.com*	Saudi Arabia	mobile	69977.54726	17	6	sw
+squareyards.com*	Saudi Arabia	mobile	2712	16	7	ga
+squareyards.com*	Saudi Arabia	mobile	1388	16	8	ga
+squareyards.com*	Saudi Arabia	mobile	3939	16	9	ga
+squareyards.com*	Saudi Arabia	mobile	2455	16	10	ga
+squareyards.com*	Saudi Arabia	mobile	1253	16	11	ga
+squareyards.com*	Saudi Arabia	mobile	9518	16	12	ga
+squareyards.com*	Saudi Arabia	mobile	94924	17	1	ga
+squareyards.com*	Saudi Arabia	mobile	115102	17	2	ga
+squareyards.com*	Saudi Arabia	mobile	144871	17	3	ga
+squareyards.com*	Saudi Arabia	mobile	134170	17	4	ga
+squareyards.com*	Saudi Arabia	mobile	292553	17	5	ga
+squareyards.com*	Saudi Arabia	mobile	13386	17	6	ga
+squareyards.com*	United Arab Emirates	desktop	14651.99657	16	7	sw
+squareyards.com*	United Arab Emirates	desktop	5957.623946	16	8	sw
+squareyards.com*	United Arab Emirates	desktop	89105.17955	16	9	sw
+squareyards.com*	United Arab Emirates	desktop	212394.6759	16	10	sw
+squareyards.com*	United Arab Emirates	desktop	45649.97922	16	11	sw
+squareyards.com*	United Arab Emirates	desktop	11382.27355	16	12	sw
+squareyards.com*	United Arab Emirates	desktop	10662.8532	17	1	sw
+squareyards.com*	United Arab Emirates	desktop	8389.302472	17	2	sw
+squareyards.com*	United Arab Emirates	desktop	7968.802042	17	3	sw
+squareyards.com*	United Arab Emirates	desktop	11540.38179	17	4	sw
+squareyards.com*	United Arab Emirates	desktop	7758.57627	17	5	sw
+squareyards.com*	United Arab Emirates	desktop	15569.42159	17	6	sw
+squareyards.com*	United Arab Emirates	desktop	19484	16	7	ga
+squareyards.com*	United Arab Emirates	desktop	19713	16	8	ga
+squareyards.com*	United Arab Emirates	desktop	132549	16	9	ga
+squareyards.com*	United Arab Emirates	desktop	338136	16	10	ga
+squareyards.com*	United Arab Emirates	desktop	91757	16	11	ga
+squareyards.com*	United Arab Emirates	desktop	11285	16	12	ga
+squareyards.com*	United Arab Emirates	desktop	27707	17	1	ga
+squareyards.com*	United Arab Emirates	desktop	23395	17	2	ga
+squareyards.com*	United Arab Emirates	desktop	22479	17	3	ga
+squareyards.com*	United Arab Emirates	desktop	27981	17	4	ga
+squareyards.com*	United Arab Emirates	desktop	37441	17	5	ga
+squareyards.com*	United Arab Emirates	desktop	31594	17	6	ga
+squareyards.com*	United Arab Emirates	mobile	93043.92098	16	7	sw
+squareyards.com*	United Arab Emirates	mobile	45266.61659	16	8	sw
+squareyards.com*	United Arab Emirates	mobile	28286.9274	16	9	sw
+squareyards.com*	United Arab Emirates	mobile	35535.4384	16	10	sw
+squareyards.com*	United Arab Emirates	mobile	27790.36085	16	11	sw
+squareyards.com*	United Arab Emirates	mobile	27429.91397	16	12	sw
+squareyards.com*	United Arab Emirates	mobile	62017.09771	17	1	sw
+squareyards.com*	United Arab Emirates	mobile	51415.93482	17	2	sw
+squareyards.com*	United Arab Emirates	mobile	151649.6536	17	3	sw
+squareyards.com*	United Arab Emirates	mobile	119187.1996	17	4	sw
+squareyards.com*	United Arab Emirates	mobile	49685.20286	17	5	sw
+squareyards.com*	United Arab Emirates	mobile	254349.7737	17	6	sw
+squareyards.com*	United Arab Emirates	mobile	49139	16	7	ga
+squareyards.com*	United Arab Emirates	mobile	34692	16	8	ga
+squareyards.com*	United Arab Emirates	mobile	16264	16	9	ga
+squareyards.com*	United Arab Emirates	mobile	25723	16	10	ga
+squareyards.com*	United Arab Emirates	mobile	16505	16	11	ga
+squareyards.com*	United Arab Emirates	mobile	12540	16	12	ga
+squareyards.com*	United Arab Emirates	mobile	32588	17	1	ga
+squareyards.com*	United Arab Emirates	mobile	25811	17	2	ga
+squareyards.com*	United Arab Emirates	mobile	115747	17	3	ga
+squareyards.com*	United Arab Emirates	mobile	38972	17	4	ga
+squareyards.com*	United Arab Emirates	mobile	56372	17	5	ga
+squareyards.com*	United Arab Emirates	mobile	234212	17	6	ga

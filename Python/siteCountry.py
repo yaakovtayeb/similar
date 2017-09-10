@@ -27,17 +27,29 @@ def removeTableName(data):
 
 #download the data using the file site_country.hql
 
-path = "C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\Clients\zavvi.com.tsv"
+path = "C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\Clients\chitai-gorod.ru.tsv"
 data = pd.read_csv(path, sep='\t', header=0) #read from file
-# data = pd.read_clipboard(sep='\t') #read from clipboard
+# y = pd.read_clipboard(sep='\t', header=None) #read from clipboard
+# y.columns=["y"]
 data = cleanCommans(data)
 removeTableName(data)
 data["date"] = map(lambda y,m: datetime.date(y, m, 1).strftime('%d.%m.%Y'), data["year"]+2000, data["month"])
 # data.loc[data["country"]=="GA", "country"] = "0"
 data["alldata"] = data["dvisits"] + data["mvisits"]
+# data.drop(data[(data["date"]=="01.08.17")].index, inplace=True)
 data.head()
+print(data.columns.values)
+
+# read the GA
+path = "C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\Clients\\brit.co2.txt"
+y = pd.read_csv(path, sep='\t', header=None) #read from file
+y = cleanCommans(y)
+removeTableName(y)
+y = y[(y["platform"]=="ga") & (y["device"] == "desktop")]["Visits"]
+y = list(y.iloc[:])
 
 # check all combination of countries comapre with GA (y)
+y = data2[0]
 y = data.loc[data["country"] == 0]["dvisits"]
 y = data.loc[data["country"] == "0"]["dvisits"] # if originally it was "GA"
 # y = [1024805.271, 1084259.93, 812266.34, 901666.3, 1, 322476.0]
@@ -51,7 +63,7 @@ countrieslist=list()
 for c in countries:
     x = data.loc[(data["country"] == c), "mvisits"]
     if len(x) == len(y):
-        slope, intercept, r_value, p_value, std_err = stats.linregress(x, y)
+        slope, intercept, r_value, p_value, std_err = stats.linregress(x.values, y.iloc[:,0].values)
     else:
         r_value = 0
     r.append(r_value)
@@ -69,28 +81,31 @@ for c in set(data["country"]):
     print "Country: %s. %f percentages" % (c, round(float(x)/all,4))
     if (float(x)/all > 0.01):
         countrieslist.append(c)
-correlation = pd.DataFrame(countrieslist, columns=["country"])
+delta = pd.DataFrame(countrieslist, columns=["country"])
 
 # add column per month with the data for each month-country
 # make a pivot so the country is in columns and month in rows - table2
 
-dtemp = data.loc[(data["country"].isin(list(correlation["country"]))) & (data["country"] != 0)]
-dtemp = pd.pivot_table(dtemp, index=("date"), columns=("country"), values=("mvisits"), aggfunc=np.sum, fill_value=0)
+dtemp = data.loc[(data["country"].isin(list(correlation["country"]))) & (data["country"] != 0)] # change correlation to delta in case you want to include by size rather than r
+dtemp = pd.pivot_table(dtemp, index=("date"), columns=("country"), values=("dvisits"), aggfunc=np.sum, fill_value=0)
 
 # create all combination of countries
 # len(correlation["country"])-1 All countries with good r without GA
-repeat = len(correlation["country"])
+repeat = len(correlation["country"])  # change correlation to delta in case you want to include by size rather than r
 combinations = list("".join(x) for x in product('01', repeat=repeat))
 # just one country off
 # combinations = oneout(len(countries)-1)
 dfComb = pd.DataFrame(columns=("combination", "delta", "r"))
 
 for i in range(0, len(combinations)):
-    # take combination multiple by country data for each month, take from this number the GA and divide by the GA
-    delta = np.average((np.sum(np.array(map(int, list(combinations[i]))) * dtemp, axis=1) - np.array(y))/np.array(y))
-    x = np.sum(np.array(map(int, list(combinations[i]))) * dtemp, axis=1)
-    slope, intercept, r_value, p_value, std_err = stats.linregress(x, y)
-    dfComb = dfComb.append(pd.DataFrame([[combinations[i], delta, r_value]], columns=("combination", "delta", "r")), ignore_index=True)
+    try:
+        # take combination multiple by country data for each month, take from this number the GA and divide by the GA
+        delta = np.average((np.sum(np.array(map(int, list(combinations[i]))) * dtemp, axis=1) - np.array(y))/np.array(y))
+        x = np.sum(np.array(map(int, list(combinations[i]))) * dtemp, axis=1)
+        slope, intercept, r_value, p_value, std_err = stats.linregress(x, y)
+        dfComb = dfComb.append(pd.DataFrame([[combinations[i], delta, r_value]], columns=("combination", "delta", "r")), ignore_index=True)
+    except:
+        pass
 
 dfComb.sort_values(["r"], ascending=False, inplace=True)
 dfComb.sort_values(["delta"], ascending=False, inplace=True)

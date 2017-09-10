@@ -3,6 +3,7 @@ from plotly.graph_objs import *
 import numpy as np
 import pandas as pd
 import datetime
+from time import sleep
 
 init_notebook_mode()
 
@@ -62,118 +63,71 @@ def Month2Num(month):
         return month
 
 def cleanCommans(dataframe):
-    for x in dataframe.columns.values:
-    dataframe[x] = map(lambda x: x.replace(",", "") if type(x) is str else x, dataframe[x])
+    for c in dataframe.columns.values:
+        dataframe[c] = map(lambda x: x.replace(",", "") if type(x) is str else x, dataframe[c])
     return dataframe.apply(pd.to_numeric, errors="ignore")
 
 # data = pd.read_clipboard(sep='\t') #read from clipboard
-path = "C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\Clients\denmark.market.gasw.tsv"
+path = "C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\Clients\LorealReport.txt"
 data = pd.read_csv(path, sep="\t", header=0) #header is the line n or None
 data.columns = [x.lower() for x in data.columns] # turn headers to lower case
 data.columns = [x[x.find(".")+1:len(x)] for x in data.columns] #delete table name from column name
 
 print(data.columns.values)
 
+# Drop empty columns:
+# data = data.drop(['unnamed: 7', 'unnamed: 8', 'unnamed: 9'], 1)
+# Drop row by condition
+# data.drop(data[(data["site"]=="spree.co.za") & (data["date"]=="01.06.17")].index, inplace=True)
+
+# Renaming columns
+# data.rename(columns={'plat':'device', 'newest': 'new_alg'}, inplace=True)
+# data["site"] = "etam.com"
+# data = data.groupby(['device', 'month'], as_index=False).sum()
+
 #change month names to numbers
 for i in range(0, len(data["month"])):
     data.loc[i,"month"] = Month2Num(data.loc[i,"month"])
 
-#Add Date
-data["date"] = map(lambda y,m: datetime.date(y, m, 1).strftime('%d.%m.%y'), data["year"], data["month"])
-
+# Add Date
+data["date"] = map(lambda y,m: datetime.date(y, m, 1).strftime('%d.%m.%y'), data["year"]+2000, data["month"])
 data = cleanCommans(data)
+data = data.sort_values(by=["year", "month"])
 
 print(data.columns.values)
-data.head()
 
-summary=list()
-local_summary={}
+# summary=pd.DataFrame(columns=['site', 'old_regression', 'new_regression', 'old_delta', 'new_delta'])
 for sites in set(data["site"]):
-    local_summary["site"] = sites
     for devices in set(data["device"]):
-        local_summary["device"] = devices
+        # local_summary["device"] = devices
         x = data.loc[(data['site'] == sites) & (data['device'] == devices)]["date"]
-        y_ga = data.loc[(data['site'] == sites) & (data['device'] == devices)]["omni value"]
-        y_sw = data.loc[(data['site'] == sites) & (data['device'] == devices)]["sw value"]
-        y_sw2 = data.loc[(data['site'] == sites) & (data['device'] == devices)]["sw-new"]
+        y_ga = data.loc[(data['site'] == sites) & (data['device'] == devices)]["ga value"]
+        y_sw1 = data.loc[(data['site'] == sites) & (data['device'] == devices)]["sw value"]
         trace1 = Scatter(
             x=x,
             y=y_ga,
             mode='lines+markers',
             name="'GoogleAnalytics'",
             line=dict(
-                shape='linear'
+                shape='linear',
+                color=('rgb(255, 150, 0)')
             )
         )
         trace2 = Scatter(
             x=x,
-            y=y_sw,
+            y=y_sw1,
             mode='lines+markers',
-            name="'SimilarWeb'",
+            name="'Similar Web'",
             line=dict(
-                shape='linear'
-            )
-        )
-        trace3 = Scatter(
-            x=x,
-            y=y_sw2,
-            mode='lines+markers',
-            name="'NewMobileAlgorithm'",
-            line=dict(
-                shape='linear'
-            )
-        )
-        plotdata = [trace1, trace2, trace3]
-        R = np.corrcoef(y_ga, y_sw2)[0,1]
-        plotTitle = "%s - %s. R: %2f. d: %2f" % (sites, devices, R, np.average(y_sw/y_ga))
-        layout = Layout(
-            title=plotTitle,
-            xaxis=dict(
-                title='Dates',
-            ),
-            yaxis=dict(
-                title='Visits',
-            )
-        )
-        fig = Figure(data=plotdata, layout=layout)
-        plot(fig)
-        raw_input("Press Enter to continue...")  # stop for manual processing
-
-# When the different devices are on the columns:
-
-for sites in set(data["site"]):
-    y1 = ['sw.desktop', 'sw.mobile', 'sw']
-    y2 = ['ga.desktop', 'ga.mobile', 'ga']
-    x = data.loc[(data['site'] == sites)]["date"]
-    for i in range(0, 3):
-        y_ga = data.loc[(data['site'] == sites)][y2[i]].values
-        y_sw = data.loc[(data['site'] == sites)][y1[i]].values
-        trace1 = Scatter(
-            x=x,
-            y=y_ga,
-            mode='lines+markers',
-            name="'GoogleAnalytics'",
-            line=dict(
-                shape='linear'
-            )
-        )
-        trace2 = Scatter(
-            x=x,
-            y=y_sw,
-            mode='lines+markers',
-            name="'SimilarWeb'",
-            line=dict(
-                shape='linear'
+                shape='linear',
+                color=('rgb(50, 50, 100)')
             )
         )
         plotdata = [trace1, trace2]
-        R = np.corrcoef(y_ga, y_sw)[0, 1]
-        device = "Desktop"
-        if i == 1:
-            device = "Mobile"
-        elif i ==2:
-            device = "All"
-        plotTitle = "Site - %s. %s, R: %2f" % (sites, device, R)
+        R = np.corrcoef(y_ga, y_sw1)[0,1]
+        d1 = np.average((np.array(y_sw1)/np.array(y_ga).astype(float))-1)
+        # summary = summary.append({'site': sites, 'old_regression': R, 'new_regression': R2, 'old_delta': d1, 'new_delta': d2}, ignore_index=True)
+        plotTitle = "%s - %s. R: %2f. d: %2f" % (sites, devices, R, np.average((np.array(y_sw1)/np.array(y_ga).astype(float))-1))
         layout = Layout(
             title=plotTitle,
             xaxis=dict(
@@ -181,9 +135,12 @@ for sites in set(data["site"]):
             ),
             yaxis=dict(
                 title='Visits',
+                range=[0, max(y_sw1.append(y_ga).append(y_sw1))*1.1]
             )
         )
         fig = Figure(data=plotdata, layout=layout)
         plot(fig)
-        raw_input("Press Enter to continue...")  # stop for manual processing
+        sleep(1)
+    # summary.to_csv("C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\Clients\summary.csv", sep = ",")
 
+        # raw_input("Press Enter to continue...")  # stop for manual processing

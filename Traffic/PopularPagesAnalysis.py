@@ -1,11 +1,21 @@
 import pandas as pd
 
-path="C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\Clients\\racingpost5.tsv"
+
+def removeTableName(data):
+    cols = list()
+    for n in data.columns.values:
+        findit = n.find(".")+1
+        cols.append(n[findit:len(n)])
+    data.columns = cols
+
+
+path="C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\Clients\\totaljobs1.tsv"
 path="C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\Clients\skybet.tsv"
 path="C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\Clients\criteo5.tsv.gz"
 
 data = pd.read_csv(path, sep='\t', header=0) #read from file
-data.columns=map(lambda x: x.replace("popularpages.",""), data.columns.values)
+# data.columns=map(lambda x: x.replace("popularpages.",""), data.columns.values)
+removeTableName(data)
 print(data.columns.values)
 # data=data.drop(['Unnamed: 0'], axis=1)
 data["pages"]=map(lambda x: x.replace("[",""), data["pages"])
@@ -15,6 +25,7 @@ data["pages"]=map(lambda x: x.split(','), data["pages"])
 
 #check how many pages contain this:
 findthis = "delivery/ck.php"
+findthis = "A_SE"
 #uniquePages=set()  #find unique pages
 
 for month in set(data["month"]):
@@ -36,7 +47,7 @@ for i in range(0, len(filterout)):
     data=data[~((data["user"]==filterout.iloc[i]["user"]) & (data["month"]==filterout.iloc[i]["month"]))]
 
 pagesData=[]
-month=3
+month=5
 for pages in data[data["month"] == month]["pages"]:
     for p in pages:
         pagesData.append(p)

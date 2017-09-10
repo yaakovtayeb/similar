@@ -1,7 +1,7 @@
 drop table yaakovt.JohnLewisWeeklyDistro;
 CREATE EXTERNAL TABLE IF NOT EXISTS yaakovt.JohnLewisWeeklyDistro(
 site            string,
-country         int,
+country         string,
 weekbegins      string,
 weekends        string,
 direct          double,
@@ -10,29 +10,31 @@ mail            double,
 organic_search  double,
 paid_search     double,
 referrals       double,
-social          double
+social          double,
+visits          double
 ) ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t'
 LINES TERMINATED BY '\n'
 LOCATION '/user/yaakov.tayeb/JohnLewisWeeklyDistro/';
 
-set hivevar:weekbegins = '24.07.2017';
-set hivevar:weekends = '30.07.2017';
-set hivevar:lyweekbegins = '25.07.2016';
-set hivevar:lyweekends = '31.07.2016';
-set hivevar:day1 = 24;
-set hivevar:day2 = 30;
-set hivevar:month1 = 7;
-set hivevar:month2 = 7;
+set hivevar:weekbegins = '07.08.2017';
+set hivevar:weekends = '13.08.2017';
+set hivevar:lyweekbegins = '08.08.2016';
+set hivevar:lyweekends = '14.08.2016';
+set hivevar:day1 = 7;
+set hivevar:day2 = 13;
+set hivevar:month1 = 8;
+set hivevar:month2 = 8;
 set hivevar:year = 17;
-set hivevar:lyday1 = 25;
-set hivevar:lymonth1 = 7;
-set hivevar:lyday2 = 31;
-set hivevar:lymonth2 = 7;
+set hivevar:lyday1 = 8;
+set hivevar:lymonth1 = 8;
+set hivevar:lyday2 = 14;
+set hivevar:lymonth2 = 8;
 set hivevar:lyyear = 16;
 
+-- INSERT INTO yaakovt.JohnLewisWeeklyDistro
 INSERT OVERWRITE TABLE yaakovt.JohnLewisWeeklyDistro
 select  traffic.site,
-        traffic.country,
+        "WorldWide",
         traffic.date1,
         traffic.date2,
         if(traffic.direct > 2*traffic.mail, (traffic.direct-2*traffic.mail)/traffic.totals, traffic.direct/traffic.totals),
@@ -41,7 +43,8 @@ select  traffic.site,
         traffic.organic_search/traffic.totals,
         traffic.paid_search/traffic.totals,
         traffic.referrals/traffic.totals,
-        traffic.social/traffic.totals
+        traffic.social/traffic.totals,
+        traffic.esttotals
 FROM
 (SELECT
         a.site,
@@ -55,16 +58,17 @@ FROM
         sum(if(getTopSpecialReferrerUDF(b.refid)=1 and refflag=1, visits, 0)) AS paid_search,
         sum(if(getTopSpecialReferrerUDF(b.refid)=6, visits, 0)) AS referrals,
         sum(if(getTopSpecialReferrerUDF(b.refid)=2, visits, 0)) AS social,
-        sum(b.visits) AS totals
+        sum(b.visits) as totals,
+        sum(b.estimatedvisits) AS esttotals
 FROM analytics.daily_estimated_totals_sr as b
 inner join yaakovt.jlsites as a on (b.site=a.site)
 WHERE b.year = ${year} and (b.month >= ${month1} and b.month<=${month2}) and (b.day>=${day1} and b.day<=${day2}) and b.country=999
 group by a.site, b.country
-) traffic;;
+) traffic;
 
 INSERT INTO yaakovt.JohnLewisWeeklyDistro
 select  traffic.site,
-        999,
+        'WorldWide',
         traffic.date1,
         traffic.date2,
         if(traffic.direct > 2*traffic.mail, (traffic.direct-2*traffic.mail)/traffic.totals, traffic.direct/traffic.totals),
@@ -73,11 +77,12 @@ select  traffic.site,
         traffic.organic_search/traffic.totals,
         traffic.paid_search/traffic.totals,
         traffic.referrals/traffic.totals,
-        traffic.social/traffic.totals
+        traffic.social/traffic.totals,
+        traffic.esttotals
 FROM
 (SELECT
         a.site,
-        999,
+        'WorldWide',
         ${lyweekbegins} as date1,
         ${lyweekends} as date2,
         sum(if(getTopSpecialReferrerUDF(b.specialref)=5, 1, 0)) AS direct,
@@ -87,11 +92,13 @@ FROM
         sum(if(getTopSpecialReferrerUDF(b.specialref)=1 and reftype="PAID", 1, 0)) AS paid_search,
         sum(if(getTopSpecialReferrerUDF(b.specialref)=6, 1, 0)) AS referrals,
         sum(if(getTopSpecialReferrerUDF(b.specialref)=2, 1, 0)) AS social,
-        sum(1) AS totals
+        sum(1) as totals,
+        c.visits AS esttotals
 FROM ds.parquet_visits as b
 inner join yaakovt.jlsites as a on (b.site=a.site)
+INNER JOIN (select c.site, sum(c.estimatedvisits) as visits from analytics.daily_estimated_values as c WHERE c.country="999" and c.year = ${lyyear} and (c.month >= ${lymonth1} and c.month<=${lymonth2}) and (c.day>=${lyday1} and c.day<=${lyday2}) group by c.site) c ON (c.site = a.site)
 WHERE b.year = ${lyyear} and (b.month >= ${lymonth1} and b.month<=${lymonth2}) and (b.day>=${lyday1} and b.day<=${lyday2}) and b.country<999
-group by a.site
-) traffic;;
+group by a.site, c.visits
+) traffic;
 
--- hive -e "set hive.cli.print.header=true; SELECT * FROM yaakovt.JohnLewisWeeklyDistro;">/home/yaakov.tayeb/output/JohnLewisWeeklyDistro2407.tsv;
+-- hive -e "set hive.cli.print.header=true; SELECT * FROM yaakovt.JohnLewisWeeklyDistro;">/home/yaakov.tayeb/output/JohnLewisWeeklyDistro130817.tsv;

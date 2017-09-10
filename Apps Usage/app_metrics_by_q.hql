@@ -28,4 +28,4 @@ SELECT * FROM mobile.daily_app_metrics
 WHERE app IN ("com.bengalimatrimony", "com.marathimatrimony", "com.kannadamatrimony")
 AND YEAR=16 and month=2 and country=356;
 
-hive -e "set hive.cli.print.header=true; SELECT * FROM yaakovt.apps_usage_source;">/home/yaakov.tayeb/output/venmo.tsv;
+hive -e "set hive.cli.print.header=true; SELECT * FROM yaakovt.apps_usage_source;">/home/yaakov.tayeb/output/indiasapps.tsv;
