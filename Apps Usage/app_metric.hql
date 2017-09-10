@@ -49,13 +49,9 @@ SELECT app,
        YEAR,
        MONTH
 FROM mobile.daily_app_engagement_estimations
-WHERE (YEAR=17
-  OR (YEAR=16
-      AND MONTH>9))
-  AND app IN ('com.bukalapak.android',
-              'com.tokopedia.tkpd',
-              'com.shopee.id')
-  AND country=360
+WHERE (YEAR=17 and month>=6 and month<=8)
+  AND app IN ('com.barclays.android.barclaysmobilebanking/')
+  AND country=826
 GROUP BY app,
          country,
          YEAR,
