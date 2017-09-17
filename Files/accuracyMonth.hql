@@ -119,6 +119,6 @@ FROM yaakovt.mobile_estimationAcc AS c
 inner join yaakovt.countriesCodes as a ON (a.countryCode=c.country)
 WHERE c.Acc>0 and c.error=0.3 and c.platfrom="mw" and c.test="accuracy" and c.year=${year} and c.month=${month} and a.MobileFilter=1;;
 
-hive -e "set hive.cli.print.header=true; SELECT * FROM yaakovt.accuracyReport;">/home/yaakov.tayeb/output/AccReport1706.tsv;
+hive -e "set hive.cli.print.header=true; SELECT * FROM yaakovt.accuracyReport;">/home/yaakov.tayeb/output/AccReport1708.tsv;
 
 -- select C from yaakovt.accuracyreport where year=17 and month=5 and country="US" and sitesize=1000000 and platform="desktop";
