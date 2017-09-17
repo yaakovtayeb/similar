@@ -21,9 +21,9 @@ day                     int
 LINES TERMINATED BY '\n'
 LOCATION '/user/yaakov.tayeb/outputs/traffic/visits/';
 
-set hivevar:qsite = ' guitarcenter.com*';
+set hivevar:qsite = 'creditmutuel.fr*';
 set hivevar:qsite2 = '%glassesusa.com%';
-set hivevar:qcountry = 840;
+set hivevar:qcountry = 250;
 set hivevar:platform = "Desktop";
 
 -- INSERT INTO yaakovt.visits
@@ -45,7 +45,7 @@ SELECT site,
        MONTH,
        DAY
 FROM ds.parquet_visits
-WHERE site="houseoffraser.co.uk*" and site2="indeed.co.uk" and year=17 and month=8 and specialref=6;
+WHERE site=${qsite} and specialref=6 and year=17 and month=9 and day=15;
 
 hive -e "set hive.cli.print.header=true; SELECT * FROM yaakovt.visits;">/home/yaakov.tayeb/output/ebay-amazon.guitar.tsv;
 
