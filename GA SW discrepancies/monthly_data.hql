@@ -31,8 +31,8 @@ SELECT site,
        year,
        month
 FROM analytics.snapshot_estimated_values
-WHERE site IN ('holidayextras.co.uk*', 'airparks.co.uk*', 'parkbcp.co.uk*') and country = ${qcountry}
-AND ((YEAR=${qyearStart} and month>=${qMonthStart}) OR (year=${qyearEnd} and month<=${qMonthEnd}));
+WHERE site IN ('mymalls.com*')
+and year=17 and month>=6;
 
 hive -e "set hive.cli.print.header=true; SELECT * FROM yaakovt.monthly_data;">/home/yaakov.tayeb/output/viocom.tsv;
 
