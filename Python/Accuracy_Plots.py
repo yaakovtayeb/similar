@@ -86,6 +86,7 @@ print(data.columns.values)
 # data = data.groupby(['device', 'month'], as_index=False).sum()
 
 #change month names to numbers
+data["month"] = map(lambda x: Month2Num(x), data["month"])
 for i in range(0, len(data["month"])):
     data.loc[i,"month"] = Month2Num(data.loc[i,"month"])
 
@@ -96,13 +97,18 @@ data = data.sort_values(by=["year", "month"])
 
 print(data.columns.values)
 
-# summary=pd.DataFrame(columns=['site', 'old_regression', 'new_regression', 'old_delta', 'new_delta'])
+R_list = list()
+delta_list = list()
+AbsDelta_list = list()
+sites_list = list()
+device_list = list()
+
 for sites in set(data["site"]):
     for devices in set(data["device"]):
-        # local_summary["device"] = devices
         x = data.loc[(data['site'] == sites) & (data['device'] == devices)]["date"]
         y_ga = data.loc[(data['site'] == sites) & (data['device'] == devices)]["ga value"]
-        y_sw1 = data.loc[(data['site'] == sites) & (data['device'] == devices)]["sw value"]
+        y_sw = data.loc[(data['site'] == sites) & (data['device'] == devices)]["sw value"]
+        y_sw2 = data.loc[(data['site'] == sites) & (data['device'] == devices)]["old-sw"]
         trace1 = Scatter(
             x=x,
             y=y_ga,
@@ -115,7 +121,7 @@ for sites in set(data["site"]):
         )
         trace2 = Scatter(
             x=x,
-            y=y_sw1,
+            y=y_sw,
             mode='lines+markers',
             name="'Similar Web'",
             line=dict(
@@ -123,11 +129,27 @@ for sites in set(data["site"]):
                 color=('rgb(50, 50, 100)')
             )
         )
-        plotdata = [trace1, trace2]
-        R = np.corrcoef(y_ga, y_sw1)[0,1]
-        d1 = np.average((np.array(y_sw1)/np.array(y_ga).astype(float))-1)
-        # summary = summary.append({'site': sites, 'old_regression': R, 'new_regression': R2, 'old_delta': d1, 'new_delta': d2}, ignore_index=True)
-        plotTitle = "%s - %s. R: %2f. d: %2f" % (sites, devices, R, np.average((np.array(y_sw1)/np.array(y_ga).astype(float))-1))
+        trace3 = Scatter(
+            x=x,
+            y=y_sw2,
+            mode='lines+markers',
+            name="'Similar Web Old'",
+            line=dict(
+                shape='linear',
+                color=('rgb(50, 150, 100)')
+            )
+        )
+        plotdata = [trace1, trace2, trace3]
+
+        R_list.append(np.corrcoef(y_ga, y_sw)[0, 1])
+        delta = (y_sw / y_ga) - 1
+        delta_list.append(np.average(delta[delta != np.inf]))
+        absdelta = abs((y_sw / y_ga) - 1)
+        AbsDelta_list.append(np.average(absdelta[absdelta != np.inf]))
+        sites_list.append(sites)
+        device_list.append(devices)
+
+        plotTitle = "%s - %s. R: %2f. d: %2f" % (sites, devices, R_list[-1], delta_list[-1])
         layout = Layout(
             title=plotTitle,
             xaxis=dict(
@@ -135,12 +157,16 @@ for sites in set(data["site"]):
             ),
             yaxis=dict(
                 title='Visits',
-                range=[0, max(y_sw1.append(y_ga).append(y_sw1))*1.1]
+                range=[0, max(y_sw.append(y_ga).append(y_sw))*1.1]
             )
         )
         fig = Figure(data=plotdata, layout=layout)
         plot(fig)
         sleep(1)
+
+Results = pd.DataFrame({'Site': sites_list, 'Device': device_list, 'R': R_list, 'delta': delta_list, 'AbsDelata': AbsDelta_list})
+print(Results)
+
     # summary.to_csv("C:\Users\yaakov.tayeb\Documents\GitHub\similar\similar\Clients\summary.csv", sep = ",")
 
         # raw_input("Press Enter to continue...")  # stop for manual processing
